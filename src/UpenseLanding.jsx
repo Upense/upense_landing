@@ -163,6 +163,15 @@ export default function UpenseLanding() {
           >
             hello@upense.com
           </a>
+          <a
+      href="https://t.me/upense_dev"
+      target="_blank" rel="noopener noreferrer"
+      className="mt-4 inline-block rounded-full border-2 border-violet-400
+                 px-9 py-3 font-semibold text-violet-100 hover:bg-violet-500
+                 hover:border-violet-500 transition"
+    >
+      @upense_dev
+    </a>
           <p className="mt-10 text-sm text-slate-500">© {new Date().getFullYear()} Upense Studio</p>
         </div>
       </footer>
