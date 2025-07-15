@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, Phone } from "lucide-react";
 
 export default function UpenseLanding() {
   const [open, setOpen] = useState(false);
@@ -158,11 +157,17 @@ export default function UpenseLanding() {
             hello@upense.com
           </a>
           <div className="mt-4 flex justify-center gap-6">
+            {/* Telegram Icon */}
             <a href="https://t.me/upense_dev" target="_blank" rel="noopener noreferrer" className="transition hover:text-violet-400">
-              <Send className="h-8 w-8 text-violet-400" />
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.588 4.18l-2.528 11.96c-.192.852-.697 1.067-1.412.667l-3.902-2.88-1.882 1.81c-.208.208-.383.383-.783.383l.28-3.972 7.216-6.528c.313-.28-.068-.435-.483-.155L8.15 12.29l-3.92-1.22c-.852-.27-.868-.852.18-1.26L20.205 3c.708-.27 1.328.155 1.383 1.18z"/>
+              </svg>
             </a>
+            {/* WhatsApp Icon */}
             <a href="https://wa.me/79879038351" target="_blank" rel="noopener noreferrer" className="transition hover:text-violet-400">
-              <Phone className="h-8 w-8 text-violet-400" />
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="currentColor" viewBox="0 0 448 512">
+                <path d="M380.9 97.1C339 55.12 283.5 32 223.9 32 99.1 32 0 131.1 0 256c0 45.1 11.8 89.1 34.2 127.8L0 480l100.3-32.9C140.3 465.2 181 .4 223.9 464c124.8 0 223.9-99.1 223.9-224 0-59.6-23-115-66.9-158.9zm-157 312.6c-31.5 0-62-8.4-89-24.4l-6.4-3.8-59.4 19.5 19.9-61.2-4.1-6.5c-15.8-26.9-24-56.6-24-87.9 0-102.7 83.5-186.2 186.2-186.2 49.8 0 96.4 19.4 131.6 54.7s54.7 81.8 54.7 131.6c0 102.7-83.5 186.2-186.3 186.2zm101.2-138.2c-5.5-2.8-32.5-16-37.5-17.8-5-1.9-8.6-2.8-12.2 2.8s-14 17.8-17.1 21.5-6.3 3.1-11.8.1c-5.5-3-21.1-7.8-40.1-24.9-14.8-13.1-24.8-29.3-27.7-34.8-2.8-5.5-.3-8.5 2.5-11.3 2.6-2.6 5.5-6.9 8.3-10.3 2.8-3.5 3.8-6.3 5.7-10.5 1.9-4.1.9-7.8-.5-10.5-1.4-2.8-12.2-29.4-16.7-40.3-4.4-10.6-8.9-9.2-12.2-9.4-3.1-.2-6.7-.2-10.2-.2s-10.5 1.6-16 7.8c-5.5 6.2-21.1 20.6-21.1 50.3s21.6 58.3 24.6 62.4c3 4.1 42.6 65 103.3 91.1 14.4 6.2 25.6 9.9 34.3 12.7 14.4 4.6 27.5 3.9 37.9 2.4 11.6-1.7 35.5-14.5 40.4-28.4 4.9-13.9 4.9-25.8 3.5-28.4-1.4-2.6-5-4.1-10.5-6.9z"/>
+              </svg>
             </a>
           </div>
           <p className="mt-10 text-sm text-slate-500">© {new Date().getFullYear()} Upense Studio</p>
