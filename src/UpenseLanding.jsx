@@ -1,17 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Send, Phone } from "lucide-react";
 
 export default function UpenseLanding() {
   const [open, setOpen] = useState(false);
 
-  /* ------------ simple palette --------------
-     accent     #6246ea   (violet‑600)
-     accent‑light #ebe8ff  (violet‑50)
-     mint       #4ade80   (emerald‑400) – for small highlights
-  -------------------------------------------*/
-
   return (
-    <div className="font-inter text-slate-800 selection:bg-emerald-200/40">
+    <div className="font-inter text-slate-800 scroll-smooth selection:bg-emerald-200/40">
       {/* ======== NAVBAR ======== */}
       <header className="fixed inset-x-0 top-0 z-50 bg-white/70 backdrop-blur-md shadow-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6">
@@ -71,7 +66,6 @@ export default function UpenseLanding() {
 
       {/* ======== HERO ======== */}
       <section id="hero" className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-b from-white to-violet-50 pt-24 md:pt-32">
-        {/* decorative blob */}
         <motion.div
           initial={{ scale: 0.6, opacity: 0 }}
           animate={{ scale: 1, opacity: 0.4 }}
@@ -92,7 +86,7 @@ export default function UpenseLanding() {
             We design and build native & cross‑platform apps — fast, transparent and in true partnership with your business.
           </p>
           <a
-            href="mailto:hello@upense.com"
+            href="#contact"
             className="mt-10 inline-block rounded-full bg-violet-600 px-8 py-3 font-semibold text-white shadow-lg transition hover:-translate-y-1 hover:bg-violet-700"
           >
             Contact&nbsp;Us
@@ -163,15 +157,14 @@ export default function UpenseLanding() {
           >
             hello@upense.com
           </a>
-          <a
-      href="https://t.me/upense_dev"
-      target="_blank" rel="noopener noreferrer"
-      className="mt-4 inline-block rounded-full border-2 border-violet-400
-                 px-9 py-3 font-semibold text-violet-100 hover:bg-violet-500
-                 hover:border-violet-500 transition"
-    >
-      @upense_dev
-    </a>
+          <div className="mt-4 flex justify-center gap-6">
+            <a href="https://t.me/upense_dev" target="_blank" rel="noopener noreferrer" className="transition hover:text-violet-400">
+              <Send className="h-8 w-8 text-violet-400" />
+            </a>
+            <a href="https://wa.me/79879038351" target="_blank" rel="noopener noreferrer" className="transition hover:text-violet-400">
+              <Phone className="h-8 w-8 text-violet-400" />
+            </a>
+          </div>
           <p className="mt-10 text-sm text-slate-500">© {new Date().getFullYear()} Upense Studio</p>
         </div>
       </footer>
